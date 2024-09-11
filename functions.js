@@ -9,4 +9,20 @@ function reverseString(string){
     return string.toLowerCase().split("").reverse().join("");
 }
 
-module.exports = {capitalize, reverseString}
+const calculator = {
+    add(a,b) {
+        return Number(a)+Number(b)
+    },
+    subtract(a,b){
+        return Number(a)-Number(b);
+    },
+    divide (a,b){
+        return a/b;
+    },
+    multiply (a,b){
+        return a*b;
+    }
+}
+
+
+module.exports = {capitalize, reverseString, calculator}
